@@ -1,5 +1,5 @@
 function App() {
-  return <div>selim</div>;
+  return <div>Deneme</div>;
 }
 
 export default App;
