@@ -1,7 +1,7 @@
 import React from "react";
-import AboutMeSvg from "../assets/AboutMe.svg";
-import EducationSvg from "../assets/Education.svg";
-import SwimmingSvg from "../assets/Swim.svg";
+import AboutMeSvg from "../assets/storyset/AboutMe.svg";
+import EducationSvg from "../assets/storyset/Education.svg";
+import SwimmingSvg from "../assets/storyset/Swim.svg";
 import AboutCard from "../components/AboutCard";
 
 export default function AboutMe() {
