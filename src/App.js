@@ -8,29 +8,6 @@ import Skills from "./pages/Skills";
 import MyProjects from "./pages/MyProjects";
 import ContactMe from "./pages/ContactMe";
 
-const router2 = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/aboutme",
-    element: <AboutMe />,
-  },
-  {
-    path: "/skills",
-    element: <Skills />,
-  },
-  {
-    path: "/myprojects",
-    element: <MyProjects />,
-  },
-  {
-    path: "/contactme",
-    element: <ContactMe />,
-  },
-]);
-
 const router = createBrowserRouter([
   {
     path: "/",
