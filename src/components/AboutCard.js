@@ -8,7 +8,7 @@ export default function AboutCard({ svg, alt, header, text }) {
         <img src={svg} alt={alt} className="w-96" />
       </div>
       <div className="w-3/5 leading-6">
-        {text.map((item) => (
+        {text?.map((item) => (
           <p className="text-paragraph text-center">{item}</p>
         ))}
       </div>
