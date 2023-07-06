@@ -57,6 +57,7 @@ const router = createBrowserRouter([
         element: <ContactMe />,
       },
     ],
+    errorElement: <h1>404</h1>,
   },
 ]);
 
