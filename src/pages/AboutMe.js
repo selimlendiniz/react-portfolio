@@ -40,13 +40,19 @@ export default function AboutMe() {
             className="h-auto w-1/4"
           />
         </section>
-        <AboutCard header={"About Me"} svg={AboutMeSvg} text={aboutmeText} />
-        <AboutCard
-          header={"Education"}
-          svg={EducationSvg}
-          text={educationText}
-        />
-        <AboutCard header={"My Hobbies"} svg={SwimmingSvg} text={hobbiesText} />
+        <div className="col-start-2 col-end-12">
+          <AboutCard header={"About Me"} svg={AboutMeSvg} text={aboutmeText} />
+          <AboutCard
+            header={"Education"}
+            svg={EducationSvg}
+            text={educationText}
+          />
+          <AboutCard
+            header={"My Hobbies"}
+            svg={SwimmingSvg}
+            text={hobbiesText}
+          />
+        </div>
       </main>
     </>
   );

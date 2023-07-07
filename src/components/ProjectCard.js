@@ -10,15 +10,23 @@ export default function ProjectCard({
   className,
 }) {
   return (
-    <div>
-      <h1>{title}</h1>
-      <img src={demoPng} alt="project image" />
-      <p>{description}</p>
+    <div
+      className={
+        "flex flex-col px-4 py-4 bg-blueSoft w-max rounded-xl " + className
+      }
+    >
+      <h1 className="w-max mb-4 text-s">{title}</h1>
+      <img className="mb-4" src={demoPng} alt="project image" />
+      <p className="inline max-w-max mb-4 text-p opacity-50 italic">
+        {description}
+      </p>
 
-      <ul>
-        {usedTech.map((tech, index) => (
-          <UsedTechCard key={index} tech={tech} />
-        ))}
+      <ul className="w-max">
+        {usedTech.map((tech, index) =>
+          index < 5 ? (
+            <UsedTechCard className={"mb-4"} key={index} tech={tech} />
+          ) : null
+        )}
       </ul>
     </div>
   );
