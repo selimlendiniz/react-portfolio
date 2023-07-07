@@ -1,10 +1,10 @@
 import React from "react";
-import techIcons from "../assets/icons/iconTech";
+import techIcons from "../assets/icons/iconTech.svg";
 
 export default function UsedTechCard({ tech }) {
   return (
-    <li>
-      <img src={techIcons} alt="tech icon" />
+    <li className="flex">
+      <img src={techIcons} className="h-4" alt="tech icon" />
       <p>{tech}</p>
     </li>
   );
