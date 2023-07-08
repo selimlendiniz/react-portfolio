@@ -1,4 +1,3 @@
-import twittericon from "../assets/icons/iconTwitter.svg";
 import githubicon from "../assets/icons/iconGithub.svg";
 import linkedinicon from "../assets/icons/iconLinkedin.svg";
 import mailSvg from "../assets/icons/iconMail.svg";
@@ -7,7 +6,7 @@ export const contacts = [
   {
     icon: linkedinicon,
     title: "@selimardacevik",
-    link: "https://www.linkedin.com/in/selimlendiniz/",
+    link: "https://www.linkedin.com/in/selimardacevik/",
   },
   {
     icon: githubicon,

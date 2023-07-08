@@ -19,8 +19,8 @@ export default function SkillCard({
         className
       }
     >
-      <img src={icon} alt={alt} className="h-14 mr-4 rounded-lg " />
-      <div className="flex flex-col justify-evenly">
+      <img src={icon} alt={alt} className="h-14 sm:mr-4 rounded-lg " />
+      <div className="hidden sm:block flex flex-col justify-evenly">
         <div className="flex flex-col mb-3 w-max">
           <h4 className="text-m">{title}</h4>
           <p className="text-p opacity-50 italic ">{description}</p>

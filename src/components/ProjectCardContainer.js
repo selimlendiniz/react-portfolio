@@ -6,7 +6,7 @@ export default function ProjectCardContainer({ projects }) {
     <div className="flex flex-wrap justify-center">
       {projects.map((project, index) => (
         <ProjectCard
-          className={"mb-4 mr-4"}
+          className={"mb-4 sm:mr-4"}
           title={project.title}
           description={project.description}
           usedTech={project.usedTech}

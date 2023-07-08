@@ -5,7 +5,7 @@ export default function SkillsContainer({ skillArray, title, className }) {
   return (
     <div
       className={
-        "flex flex-wrap flex-col relative pt-10 px-10 border border-dashed rounded-3xl " +
+        "flex flex-wrap flex-col relative pt-10 px-5 border border-dashed rounded-3xl " +
         className
       }
     >

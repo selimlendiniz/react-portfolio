@@ -21,23 +21,21 @@ export default function AboutMe() {
     "Computer Games",
   ];
 
+  const whoAmIText = [
+    "I'm a front-end developer studying computer science. My job is to   make simple or advanced web applications that will help you. My  goals are to write clean, SOLID, readable, redeveloped, testable  high quality code.",
+  ];
   return (
     <>
       <main className="grid grid-cols-12 gap-y-24 py-16">
-        <section className="flex justify-center items-center col-start-2 col-end-12 h-max ">
-          <div className="flex flex-col w-2/4 mr-8">
-            <h1 className="text-xxl mb-4 inline">So, Who Am I?</h1>
-            <h2 className="text-m inline">
-              I'm a front-end developer studying computer science. My job is to
-              make simple or advanced web applications that will help you. My
-              goals are to write clean, SOLID, readable, redeveloped, testable
-              high quality code.
-            </h2>
+        <section className="flex flex-wrap justify-center items-center col-start-2 col-end-12">
+          <div className="flex flex-col mr-8 w-128 text-center lg:text-left">
+            <h1 className="lg:text-xxl text-l mb-4">So, Who Am I?</h1>
+            <h2 className="text-s mb-4 lg:text-m">{whoAmIText}</h2>
           </div>
           <img
             src="https://images.unsplash.com/photo-1581382575275-97901c2635b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80"
             alt="Selim Arda Cevik"
-            className="h-auto w-1/4"
+            className="w-80  rounded"
           />
         </section>
         <div className="col-start-2 col-end-12">
