@@ -14,7 +14,7 @@ export default function Navbar() {
           <button className="sm:hidden">
             <img
               src={barSvg}
-              className="h-4"
+              className="h-5"
               alt="menu button"
               onClick={() => setIsMenuOpen((prev) => !prev)}
             />
