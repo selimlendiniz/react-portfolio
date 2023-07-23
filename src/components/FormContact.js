@@ -1,29 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import Input from "./Input";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export default function FormContact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
+  const form = useRef();
+  const [isSending, setIsSending] = useState(false);
 
-    console.log(details);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setIsSending(true);
+    form.current[3].innerHTML = "Message sending";
+
+    emailjs
+      .sendForm(
+        "service_p0bcj6k",
+        "template_207n6z2",
+        form.current,
+        "nISHHDijyP6gFwoP7"
+      )
+      .then(
+        (result) => {
+          setIsSending(false);
+          form.current[3].innerHTML = "Message Sent!";
+        },
+        (error) => {
+          setIsSending(false);
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <div>
-      <form className="flex flex-col" onSubmit={handleSubmit}>
+      <form ref={form} className="flex flex-col" onSubmit={sendEmail}>
         <label className="mb-2" htmlFor="name">
           Name
         </label>
         <Input
           type="text"
           id="name"
-          name="name"
+          name="user_name"
           placeholder={"Enter Your Name"}
         />
         <label className="mb-2" htmlFor="email">
@@ -32,7 +50,7 @@ export default function FormContact() {
         <Input
           type="email"
           id="email"
-          name="email"
+          name="user_email"
           placeholder={"Enter Your Email"}
         />
         <label className="mb-2" htmlFor="message">
@@ -44,8 +62,12 @@ export default function FormContact() {
           name="message"
           placeholder={"Enter Your Message"}
         />
-        <button className="mb-2 py-4 bg-blueSoft rounded-lg" type="submit">
-          Send
+        <button
+          className={"mb-2 py-4 bg-blueSoft rounded-lg "}
+          disabled={isSending}
+          type="submit"
+        >
+          Submit
         </button>
       </form>
     </div>

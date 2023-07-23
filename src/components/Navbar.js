@@ -10,7 +10,7 @@ export default function Navbar() {
     <div>
       <nav className="grid grid-cols-12 h-min">
         <div className="flex items-center justify-between col-start-2 col-end-12  py-4">
-          <h2 className="font-mono text-s h-min">Selim Arda Cevik</h2>
+          <h2 className="font-mono text-s h-min">Selim Arda Çevik</h2>
           <button className="sm:hidden">
             <img
               src={barSvg}

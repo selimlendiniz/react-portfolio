@@ -6,6 +6,8 @@ import ContactContainer from "../components/ContactContainer";
 import FormContact from "../components/FormContact";
 
 export default function ContactMe() {
+  document.title = "Contact Me";
+
   return (
     <main className="grid grid-cols-12 pb-5">
       <div className="col-start-2 col-end-12 flex flex-col justify-center items-center">

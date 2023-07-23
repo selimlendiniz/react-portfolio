@@ -5,6 +5,7 @@ import { myProjects } from "../variables/myProjects";
 import ProjectCardContainer from "../components/ProjectCardContainer";
 
 export default function MyProjects() {
+  document.title = "My Projects";
   return (
     <main className="grid grid-cols-12">
       <div className="col-start-2 col-end-12 flex flex-col justify-between">

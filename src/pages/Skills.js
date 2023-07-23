@@ -7,6 +7,7 @@ import { libariesFrameworks } from "../variables/libariesFrameworks";
 import { skills } from "../variables/skills";
 
 export default function Skills() {
+  document.title = "Skills & Tools";
   return (
     <main className="grid grid-cols-12">
       <div className="col-start-2 col-end-12 flex flex-col justify-between">

@@ -1,20 +1,22 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import myPicture from "../assets/photos/myPhoto.png";
 
 export default function Home() {
+  document.title = "Home";
   return (
-    <div className="grid grid-cols-12">
+    <div className="grid grid-cols-12 my-auto">
       <main className="col-start-2 col-end-12 flex flex-row flex-wrap-reverse justify-evenly items-center h-min mt-4">
         <div className="text-center">
-          <h1 className="text-xxl mb-4">Selim Arda Cevik</h1>
+          <h1 className="text-xxl mb-4">Selim Arda Çevik</h1>
           <h2 className="text-s">
             Software Engineer,Front End & App Developer
           </h2>
         </div>
         <img
-          src="https://i.ibb.co/0jZ3Q0L/IMG-20210606-162751.jpg"
+          src={myPicture}
           alt="Selim Arda Cevik"
-          className="rounded-full w-96 h-96"
+          className="rounded-md w-96"
         />
       </main>
     </div>
