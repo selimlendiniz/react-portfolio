@@ -17,13 +17,13 @@ export const libariesFrameworks = [
     icon: ReactSvg,
     title: "React Native",
     description: "Mobile App",
-    status: 100,
+    status: 60,
   },
   {
     icon: SpringSvg,
     title: "Spring Boot",
     description: "Back-End",
-    status: 100,
+    status: 30,
   },
   {
     icon: ReduxSvg,
